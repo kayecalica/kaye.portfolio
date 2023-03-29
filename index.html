@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5cee64dade.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <nav>
+      <a href="#" class="logo">Portfolio.</a>
+      <!--LIST OF MENU-->
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-sharp fa-solid fa-x" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="container">
+
+      <div class="header-text">
+        <h1>Hello, I'm <span>Kaye</span></h1>
+        <p>Web Developer</p>
+      </div>
+      <img src="./img/k1.png" alt="kaye.photo">
+    </div>
+  </div>
+  <!-------------about--->
+  <div id="about">
+    <div class="about-container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./img/k2.png" alt="kaye.photo">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>Committed and goal-oriented computer engineering graduate looking to
+             pursue a career in full stack developer. With basic knowledge 
+             in coding and design, possess excellent knowledge in HTML, CSS, Javascript.
+             Ability to learn things quickly and capable of working in a fast-paced and team-driven environment.</p>
+         
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web interfaces</li>
+              <li><span>Web Development</span><br>Web Development | HTML5 | CSS3 |Javascript</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023</span><br>Web Developer</li>
+              <li><span>2022</span><br>Social Media Management</li>
+              <li><span>2021-2022</span><br>Design and Prototype </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2018-2022</span><br>Bachelor of Science in Computer Engineering</li>
+              <li><span>2016-2017</span><br>Accountancy and Business Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-------services---------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Developer</h2>
+        <p>is to create and maintain websites. Also responsible for the site's technical aspects, such as its performance and capacity.</p>
+           <a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-pen-nib"></i>
+        <h2>Web Design</h2>
+        <p>is the art of planning and arranging content on a website so that 
+           it can be shared and accessed online with the world.</p>
+           <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>ui/ux Design</h2>
+        <p>is to create user-friendly interfaces that enable users to
+           understand how to use complex technical products.</p>
+           <a href="https://www.coursera.org/articles/ui-vs-ux-design" target="_blank">Learn more</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!---------Portfolio------------>
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="./img/work1.jpg" alt="">
+        <div class="layer">
+          <h3>Home Website Sample 1</h3>
+          <p>It used a slider effect to change the product model into different product including background color.</p>
+          <a href="https://kayecalica.github.io/timHortonsWebsite/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./img/work2.jpg" alt="">
+        <div class="layer">
+          <h3>Home Website Sample 2</h3>
+          <p>A Home page website that used swiper to swipe the product.</p>
+          <a href="https://kayecalica.github.io/drinkInWebsite/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./img/work3.jpg" alt="">
+        <div class="layer">
+          <h3>Product changer / add to cart</h3>
+          <p>This page helps customer to pick their order specifically and added it into cart. </p>
+          <a href="https://kayecalica.github.io/ategsweb-prac1/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div><div class="work">
+        <img src="./img/work4.jpg" alt="">
+        <div class="layer">
+          <h3>Log in Form</h3>
+          <p>To utilizes the credentials of a user, in order to authenticate their access. </p>
+          <a href="https://kayecalica.github.io/ategsweb-prac2/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div><div class="work">
+        <img src="./img/work5.jpg" alt="">
+        <div class="layer">
+          <h3>Portfolio Sample Website</h3>
+          <p>This website is to showcase your work and let others know about yourself. </p>
+          <a href="https://kayecalica.github.io/praktisPortfolio/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div><div class="work">
+        <img src="./img/work6.jpg" alt="">
+        <div class="layer">
+          <h3>TO DO LIST</h3>
+          <p>To-do lists can help you get, and stay, on top of important projects and piles of tasks or decisions. </p>
+          <a href="https://kayecalica.github.io/pracTodolist/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----contact--------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>kayecalica00@gmail.com</p>
+        <p><i class="fa-sharp fa-solid fa-phone-volume"></i>09676586982</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/login.php/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/kayecalica/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/regine-kaye-calica-597407249/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/kayecalica" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="/RegineKayeCalica.CV.pdf" download class="btn btn2"><i class="fa-sharp fa-solid fa-download"></i>Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright © kayecalica.portfolio </p>
+  </div>
+</div>
+
+
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPYPh_7XIj9ya5qZqaG75Wx7TYMvxLbbMmOJy3l2JCKmeRXXwbbfU1eJXmoaQ2JKXi/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
